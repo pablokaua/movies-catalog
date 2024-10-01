@@ -1,0 +1,15 @@
+<h1>Cadastrar Novo Gênero de Filme</h1>
+
+<% if flash[:notice]%>
+    <div>
+        <%= flash[:notice]%>
+    </div>
+<%end%>
+
+<%= form_for @movie_genre do |f|%>
+    <%= f.label :name, "Nome do Gênero"%>
+    <br>
+    <%= f.text_field :name%>
+    <br>
+    <%= f.submit "Salvar"%>
+<%end%>

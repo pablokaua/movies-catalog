@@ -1,0 +1,11 @@
+<h1>Editar Gênero</h1>
+
+
+
+<%= form_for @movie_genre do |f|%>
+    <%= f.label :name, "Nome do Gênero"%>
+    <br>
+    <%= f.text_field :name%>
+    <br>
+    <%= f.submit "Salvar"%>
+<%end%>
