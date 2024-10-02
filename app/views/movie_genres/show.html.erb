@@ -1,0 +1,19 @@
+<h1>Gênero <%= @movie_genre.name %></h1>
+<div class="edit">
+<%= link_to "Editar", edit_movie_genre_path%>
+</div>
+
+<h2>Filmes de <%= @movie_genre.name %>:</h2>
+
+<div class="movies">
+    <%@movies.each do |movie|%>
+    <div class="movie">
+    <%= link_to movie.title, movie %>
+    </div>
+    <br/>
+    <%end%>
+</div>
+
+<div class="back">
+<%= link_to 'Voltar', root_path %>
+</div>
