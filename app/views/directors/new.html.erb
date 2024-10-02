@@ -1,0 +1,14 @@
+<h1>Cadastrar Nova Diretor</h1>
+
+<% if @director.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@director.errors.count, "error") %> proibiu este diretor de ser salvo:</h2>
+    <ul>
+      <% @director.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= render "form" %>

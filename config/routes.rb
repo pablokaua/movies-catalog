@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   root to: "home#index"
   resources :movie_genres, only: [ :new, :create, :edit, :update ]
+  resources :directors, only: [ :new, :create, :edit, :update ]
 end
