@@ -5,3 +5,12 @@
         <%= flash[:notice]%>
     </div>
 <%end%>
+
+<div class="movie-genres">
+    <%@movie_genres.each do |m|%>
+    <div class="movie-genre">
+    <%= link_to m.name, m %>
+    </div>
+    <br/>
+    <%end%>
+</div>

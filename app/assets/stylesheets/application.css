@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+ .movie-genres {
+    max-width: 50%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(250, 177, 160,0.5);
+ }
+
+ .movie-genre > a {
+    font-size: 20px;
+    color: rgba(232, 67, 147,1.0);
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+ }
