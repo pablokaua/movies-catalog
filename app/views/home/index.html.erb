@@ -6,11 +6,23 @@
     </div>
 <%end%>
 
-<div class="movie-genres">
-    <%@movie_genres.each do |m|%>
-    <div class="movie-genre">
-    <%= link_to m.name, m %>
+<div class="infos">
+    <div class="movie-genres">
+        <h2>Gêneros</h2>
+        <%@movie_genres.each do |m|%>
+        <div class="movie-genre">
+        <%= link_to m.name, m %>
+        </div>
+        <br/>
+        <%end%>
     </div>
-    <br/>
-    <%end%>
+    <div class="directors">
+        <h2>Diretores</h2>
+        <%@directors.each do |d|%>
+        <div class="movie-genre">
+        <%= link_to d.name, d %>
+        </div>
+        <br/>
+        <%end%>
+    </div>
 </div>

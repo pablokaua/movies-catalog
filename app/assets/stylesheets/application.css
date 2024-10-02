@@ -14,8 +14,15 @@
  *= require_self
  */
 
+
  html {
    font-family: monospace;
+ }
+
+ a {
+   font-size: 20px;
+   font-weight: bold;
+   text-decoration: none;
  }
 
  .back {
@@ -45,14 +52,29 @@
    text-decoration: none;
    font-size: 15px;
  }
+.infos {
+   width: 100%;
+   display: flex;
+}
 
  .movie-genres {
-    max-width: 50%;
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background-color: rgba(250, 177, 160,0.5);
+   width: 50%;
+   border: 2px solid red;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   background-color: rgba(250, 177, 160,0.5);
+   padding: 10px;
+ }
+
+ .directors {
+   width: 50%;
+   border: 2px solid blue;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   background-color: rgba(116, 185, 255,0.5);
+   padding: 10px;
  }
 
  .movies {
@@ -66,17 +88,6 @@
     padding: 20px;
  }
 
- .movie > a {
-   font-size: 20px;
-   text-decoration-line: underline;
-   color: rgba(45, 52, 54,1.0);
-   font-weight: bold;
- }
 
- .movie-genre > a {
-    font-size: 20px;
-    color: rgba(232, 67, 147,1.0);
-    font-weight: bold;
-    padding: 10px;
-    text-decoration: none;
- }
+
+
