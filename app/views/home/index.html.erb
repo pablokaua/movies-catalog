@@ -26,3 +26,12 @@
         <%end%>
     </div>
 </div>
+<div class="movies">
+        <h2>Filmes</h2>
+        <%@movies.each do |m|%>
+        <div class="movie">
+        <%= link_to "#{m.title} - #{m.release_year}", m %>
+        </div>
+        <br/>
+        <%end%>
+    </div>

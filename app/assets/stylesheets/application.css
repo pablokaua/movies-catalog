@@ -88,6 +88,27 @@
     padding: 20px;
  }
 
+ .infos-movie {
+  font-size: 18px;
+ }
+
+ .sysnopsis {
+  margin-top: 20px;
+  font-size: 20px;
+ }
+
+ .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+ }
+
+ .create-button {
+  text-align: center;
+  height: 20px;
+  background-color: rgba(0, 206, 201,1.0);
+  padding: 10px;
+ }
 
 
 

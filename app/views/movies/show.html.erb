@@ -1,0 +1,19 @@
+<h1><%= @movie.title%></h1>
+
+<div class="edit">
+<%= link_to "Editar", edit_movie_genre_path%>
+</div>
+
+<div class="infos-movie">
+    <%= @movie.release_year%> |
+    <%= @movie.duration%> min |
+    <%= @movie.country%> 
+</div>
+
+<div class="sysnopsis">
+    <%= @movie.synopsis%>
+</div>
+<div class="infos-movie">
+    <p>Diretor: <%= link_to @movie.director.name, @movie.director%></p>
+    <p>Gênero: <%= link_to @movie.movie_genre.name, @movie.movie_genre%></p>
+</div>

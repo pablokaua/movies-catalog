@@ -17,6 +17,12 @@
   </head>
 
   <body>
+    <nav class="nav-bar">
+      <li class="create-button"><%= link_to "Cadastrar Gênero", new_movie_genre_path%></li>
+      <li class="create-button"><%= link_to "Cadastrar Diretor", new_director_path%></li>
+      <li class="create-button"><%= link_to "Cadastrar Filme", new_movie_path%></li>
+      <li class="back"><%= link_to "Home", root_path%></li>
+    </nav>
     <%= yield %>
   </body>
 </html>
