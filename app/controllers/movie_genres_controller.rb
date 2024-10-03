@@ -11,7 +11,7 @@ class MovieGenresController < ApplicationController
     @movie_genre = MovieGenre.new(params.require(:movie_genre).permit(:name))
     if @movie_genre.save
       flash[:notice] = "Gênero #{@movie_genre.name} cadastrado com sucesso!"
-      return redirect_to new_movie_genre_path
+      return redirect_to root_path
     end
     render :new
   end
