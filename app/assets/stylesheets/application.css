@@ -25,6 +25,41 @@
    text-decoration: none;
  }
 
+ label {
+  font-size: 20px;
+ }
+
+ input {
+  outline: none;
+  padding: 10px;
+  width: 100%;
+ }
+
+ input[type="submit"] {
+  background-color: #00b894;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 20px;
+ }
+
+ select {
+  border: none;
+  outline: none;
+  background-color: #dfe6e9;
+  padding: 10px;
+ }
+
+ textarea {
+  height: 50px;
+ }
+
+ form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+
  .back {
    text-align: center;
    width: 50px;
